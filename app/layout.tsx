@@ -1,5 +1,10 @@
 import "./globals.css";
+import { Geist } from "next/font/google";
 import type { Metadata } from "next";
+
+const geist = Geist({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "María García",
@@ -13,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="max-w-4xl mx-auto px-6">
+      <body className={`${geist.className} max-w-4xl mx-auto px-6`}>
         {children}
       </body>
     </html>
