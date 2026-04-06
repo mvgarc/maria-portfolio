@@ -429,3 +429,7 @@ footer {
   .nav-links { display: none; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
 }
+
+@media (pointer: fine) {
+  * { cursor: none !important; }
+}
