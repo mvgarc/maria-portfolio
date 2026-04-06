@@ -14,7 +14,7 @@ const links = [
     label: "Email",
     value: "Escríbeme",
     // TODO: reemplaza con tu correo real
-    href: "mailto:tu@email.com",
+    href: "mariav2601@gmail.com",
   },
 ];
 
@@ -52,7 +52,7 @@ export default function Footer() {
 
       {/* FOOTER */}
       <footer>
-        <span>© 2025 María V. García</span>
+        <span>© 2026 mvgc</span>
         <span>Diseñado & construido con Next.js</span>
       </footer>
     </>
