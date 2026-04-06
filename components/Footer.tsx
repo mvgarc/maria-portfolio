@@ -6,15 +6,14 @@ const links = [
   },
   {
     label: "LinkedIn",
-    value: "Maria V. Garcia",
+    value: "Maria Garcia",
     // TODO: reemplaza con tu URL exacta de LinkedIn
     href: "https://www.linkedin.com/in/mariavgarciac",
   },
   {
     label: "Email",
     value: "Escríbeme",
-    // TODO: reemplaza con tu correo real
-    href: "mariav2601@gmail.com",
+    href: "mailto:mariav2601@gmail.com",
   },
 ];
 

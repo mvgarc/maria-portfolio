@@ -10,7 +10,7 @@ const details = [
   ["Posgrado", "Maestría GTI — en curso"],
   ["Disponibilidad", "Remoto · Tiempo completo"],
   ["Idiomas", "ES · EN · JP (A2)"],
-  ["LinkedIn", "Maria V. Garcia"],
+  ["LinkedIn", "Maria Garcia"],
 ];
 
 export default function About() {
