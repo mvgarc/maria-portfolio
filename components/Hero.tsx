@@ -113,7 +113,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <a href="#" className="nav-logo">MVG</a>
+        <a href="#" className="nav-logo">María G.</a>
         <ul className="nav-links">
           <li><a href="#sobre-mi">Sobre mí</a></li>
           <li><a href="#proyectos">Proyectos</a></li>
