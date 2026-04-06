@@ -15,11 +15,11 @@ const projects: Project[] = [
     link: "https://github.com/mvgarc/container_umi",
   },
   {
-    title: "Próximo proyecto",
-    description: "Este espacio está reservado para tu siguiente trabajo.",
-    stack: [],
-    link: null,
-    placeholder: true,
+    title: "Kanji Finder",
+    description: "aplicación web que permite consultar información detallada sobre un único kanji del idioma japonés, desde niveles de dificultad JLPT N5 a N1.",
+    stack: ["Python", "Flask", "React + Vite", "SQLite"],
+    link: "https://github.com/mvgarc/Kanji_Finder",
+  
   },
 ];
 

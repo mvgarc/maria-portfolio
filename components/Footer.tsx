@@ -8,7 +8,7 @@ const links = [
     label: "LinkedIn",
     value: "Maria V. Garcia",
     // TODO: reemplaza con tu URL exacta de LinkedIn
-    href: "https://www.linkedin.com/in/maria-v-garcia",
+    href: "https://www.linkedin.com/in/mariavgarciac",
   },
   {
     label: "Email",

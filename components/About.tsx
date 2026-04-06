@@ -22,9 +22,9 @@ export default function About() {
         <div className="about-grid">
           <div className="about-text">
             <h2 className="section-title">
-              Sistemas que piensan.<br />
+              Construyo cosas que <br />
               <em style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic", color: "var(--ink-soft)" }}>
-                Interfaces que se sienten.
+                funcionan y se ven bien.
               </em>
             </h2>
             <p>
