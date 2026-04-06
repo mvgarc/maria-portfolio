@@ -1,24 +1,60 @@
+const links = [
+  {
+    label: "GitHub",
+    value: "github.com/mvgarc",
+    href: "https://github.com/mvgarc",
+  },
+  {
+    label: "LinkedIn",
+    value: "Maria V. Garcia",
+    // TODO: reemplaza con tu URL exacta de LinkedIn
+    href: "https://www.linkedin.com/in/maria-v-garcia",
+  },
+  {
+    label: "Email",
+    value: "Escríbeme",
+    // TODO: reemplaza con tu correo real
+    href: "mailto:tu@email.com",
+  },
+];
+
 export default function Footer() {
   return (
-    <footer className="py-16 border-t border-neutral-200 text-sm text-neutral-500 flex justify-between">
-      <div>© {new Date().getFullYear()} María García</div>
+    <>
+      {/* CONTACT */}
+      <section id="contacto" className="contact-section">
+        <div className="contact-inner">
+          <div>
+            <p className="section-label">Contacto</p>
+            <h2 className="contact-large">
+              Trabajemos<br /><em>juntos.</em>
+            </h2>
+          </div>
+          <div className="contact-links">
+            {links.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel="noopener noreferrer"
+                className="contact-link"
+              >
+                <div>
+                  <p className="contact-link-label">{link.label}</p>
+                  <p className="contact-link-value">{link.value}</p>
+                </div>
+                <span className="contact-link-arrow">↗</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
 
-      <div className="space-x-6">
-        <a
-          href="https://github.com/mvgarc"
-          target="_blank"
-          className="hover:text-neutral-900 transition-colors"
-        >
-          GitHub
-        </a>
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          className="hover:text-neutral-900 transition-colors"
-        >
-          LinkedIn
-        </a>
-      </div>
-    </footer>
+      {/* FOOTER */}
+      <footer>
+        <span>© 2025 María V. García</span>
+        <span>Diseñado & construido con Next.js</span>
+      </footer>
+    </>
   );
 }
