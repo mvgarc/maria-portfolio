@@ -1,45 +1,38 @@
 const skills = [
-  { cat: "Frontend", items: ["HTML", "CSS", "JavaScript", "React", "Next.js", "TypeScript"] },
-  { cat: "Backend", items: ["Python", "Django", "REST APIs", "Docker"] },
+  { cat: "Backend", items: ["Python", "FastAPI", "Django", "REST APIs", "WebSockets", "Docker"] },
   { cat: "Bases de datos", items: ["PostgreSQL", "MySQL", "Modelado relacional"] },
-  { cat: "Herramientas", items: ["Git", "GitHub", "Linux", "Documentación técnica"] },
+  { cat: "Frontend", items: ["React", "React Native", "TypeScript", "Vue.js"] },
+  { cat: "Herramientas", items: ["Git", "GitHub", "Linux", "AWS"] },
 ];
-
 const details = [
-  ["Educación", "Ing. Computación — UJAP, 2023"],
-  ["Posgrado", "Maestría GTI — en curso"],
-  ["Disponibilidad", "Remoto · Tiempo completo"],
-  ["Idiomas", "ES · EN · JP (A2)"],
-  ["LinkedIn", "Maria Garcia"],
+  ["educación", "Ing. Computación — UJAP, 2023"],
+  ["posgrado", "Maestría GTI — en curso"],
+  ["disponibilidad", "Remoto · Tiempo completo"],
+  ["idiomas", "ES · EN · JP (A2)"],
+  ["linkedin", "Maria Garcia"],
 ];
-
 export default function About() {
   return (
     <>
-      {/* ABOUT */}
       <section id="sobre-mi">
-        <p className="section-label">Sobre mí</p>
+        <p className="section-label">// sobre-mi</p>
         <div className="about-grid">
           <div className="about-text">
-            <h2 className="section-title">
-              Construyo cosas que <br />
-              <em style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic", color: "var(--ink-soft)" }}>
-                funcionan y se ven bien.
-              </em>
-            </h2>
+            <h2 className="section-title">Backend primero. El resto, también.</h2>
             <p>
-              Soy ingeniera en computación con experiencia en análisis, diseño y
-              desarrollo de soluciones web. Me muevo cómodamente entre el backend
-              y el frontend, pero lo que más me apasiona es crear productos que
-              las personas realmente quieran usar.
+              Soy ingeniera en computación con foco en desarrollo backend con
+              Python y FastAPI. Lidero el desarrollo técnico de un proyecto
+              propio con arquitectura FastAPI + WebSockets para comunicación
+              en tiempo real, resolviendo condiciones de carrera y
+              sincronización entre múltiples clientes conectados.
             </p>
             <p>
-              Actualmente cursando maestría en Gerencia de Tecnología de la
-              Información. Hablo español, inglés (B1) y estudio japonés (A2).
-              Disfruto del trabajo remoto y los equipos distribuidos.
+              También me muevo cómodamente en frontend (React, React Native,
+              Vue.js) cuando el proyecto lo requiere. Actualmente curso una
+              maestría en Gerencia de Tecnología de la Información.
             </p>
           </div>
-          <div>
+          <div className="config-block">
             {details.map(([label, value]) => (
               <div key={label} className="detail-row">
                 <span className="detail-label">{label}</span>
@@ -50,15 +43,14 @@ export default function About() {
         </div>
       </section>
 
-      {/* SKILLS */}
       <section className="skills-section">
-        <p className="section-label">Habilidades</p>
-        <h2 className="section-title">Stack técnico</h2>
+        <p className="section-label">// stack</p>
+        <h2 className="section-title">Herramientas de trabajo</h2>
         <div className="skills-grid">
           {skills.map((group) => (
             <div key={group.cat} className="skill-group">
               <h3>{group.cat}</h3>
-              <ul className="skill-list">
+              <ul className="skill-tags">
                 {group.items.map((item) => (
                   <li key={item}>{item}</li>
                 ))}

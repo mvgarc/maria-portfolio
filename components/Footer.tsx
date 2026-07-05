@@ -1,37 +1,23 @@
 const links = [
-  {
-    label: "GitHub",
-    value: "github.com/mvgarc",
-    href: "https://github.com/mvgarc",
-  },
-  {
-    label: "LinkedIn",
-    value: "Maria Garcia",
-    // TODO: reemplaza con tu URL exacta de LinkedIn
-    href: "https://www.linkedin.com/in/mariavgarciac",
-  },
-  {
-    label: "Email",
-    value: "Escríbeme",
-    href: "mailto:mariav2601@gmail.com",
-  },
+  { label: "github", value: "github.com/mvgarc", href: "https://github.com/mvgarc" },
+  { label: "linkedin", value: "Maria Garcia", href: "https://www.linkedin.com/in/mariavgarciac" },
+  { label: "email", value: "mariav2601@gmail.com", href: "mailto:mariav2601@gmail.com" },
 ];
 
 export default function Footer() {
   return (
     <>
-      {/* CONTACT */}
       <section id="contacto" className="contact-section">
         <div className="contact-inner">
           <div>
-            <p className="section-label">Contacto</p>
+            <p className="section-label">// contacto</p>
             <h2 className="contact-large">
               Trabajemos<br /><em>juntos.</em>
             </h2>
           </div>
           <div className="contact-links">
             {links.map((link) => (
-              <a
+              <a 
                 key={link.label}
                 href={link.href}
                 target={link.href.startsWith("http") ? "_blank" : undefined}
@@ -48,8 +34,6 @@ export default function Footer() {
           </div>
         </div>
       </section>
-
-      {/* FOOTER */}
       <footer>
         <span>© 2026 mvgc</span>
         <span>Diseñado & construido con Next.js</span>

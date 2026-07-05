@@ -8,7 +8,7 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   title: "María García",
-  description: "Data Analyst & Backend Engineer",
+  description: "Ingeniera en Computación · Backend Developer",
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${geist.className} max-w-4xl mx-auto px-6`}>
+      <body className={geist.className}>
         {children}
       </body>
     </html>
